@@ -1,0 +1,14 @@
+.btn {
+  all: unset;
+  padding: 1rem 2rem;
+  border: 1px solid #1f1f1f;
+  color: $gris;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 4rem;
+
+  &:hover {
+    background-color: $gris;
+    color: $blanco;
+  }
+}

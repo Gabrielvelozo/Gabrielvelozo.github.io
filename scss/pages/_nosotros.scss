@@ -1,0 +1,36 @@
+/* ? SOBRE NOSOTROS */
+.nosotros {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url(../img/nosotros.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__contenedor {
+    background-color: $blanco;
+
+    @include tablet {
+      padding: 3rem;
+    }
+    @include desktop {
+      grid-column: 1 /4;
+    }
+  }
+}
+
+.nosotro__titulo {
+  font-size: 5rem;
+  font-weight: 900;
+
+  @include tablet {
+    font-size: 6rem;
+    line-height: 0;
+  }
+}
+.nosotro__texto {
+  line-height: 1.8;
+  font-weight: 300;
+}

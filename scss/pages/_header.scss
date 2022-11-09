@@ -1,0 +1,53 @@
+/* HEADER */
+.hero {
+  background-image: url(../img/hero.jpg);
+  min-height: 60rem;
+  color: $blanco;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 3rem 0;
+
+  &__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(60rem - 3rem);
+  }
+}
+.barra__titulo {
+  color: $blanco;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  span {
+    font-weight: 900;
+  }
+
+  @include x-large {
+    font-size: 5rem;
+  }
+}
+
+/* ESLOGAN */
+.slogan {
+  @include tablet {
+    margin-left: auto;
+
+    &__detalle {
+      text-align: right;
+    }
+  }
+
+  &__titulo {
+    font-weight: 900;
+    margin: 0;
+    line-height: 0;
+    font-size: 3rem;
+
+    @include x-large {
+      font-size: 5rem;
+      line-height: 1;
+    }
+  }
+}

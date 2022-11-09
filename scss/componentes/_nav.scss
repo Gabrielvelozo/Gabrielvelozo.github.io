@@ -1,0 +1,74 @@
+/* BARRA NAVEGACIÓN */
+.barra {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  &__navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+
+    @include tablet {
+      align-items: flex-end;
+    }
+  }
+
+  &__contacto {
+    display: flex;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 4rem;
+      height: 4rem;
+      background-image: url(../img/telefono.png);
+      background-repeat: no-repeat;
+      margin-right: 1rem;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+  &__link,
+  &__contacto {
+    color: $blanco;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+  }
+  &__link {
+    @include tablet {
+      font-size: 1.5rem;
+      padding: 1rem;
+      font-weight: 500;
+    }
+    @include x-large {
+      font-size: 2.2rem;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.493);
+        color: $gris;
+      }
+    }
+    &__contacto {
+      @include tablet {
+        padding: 0;
+      }
+    }
+  }
+}

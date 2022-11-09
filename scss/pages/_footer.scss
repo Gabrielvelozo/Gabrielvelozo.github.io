@@ -1,0 +1,22 @@
+/* ?FOOTER */
+
+.footer {
+  margin-top: 5rem;
+  height: 50rem;
+  color: $blanco;
+  background-image: url(../img/footer_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @include desktop {
+    background-position: center;
+  }
+  &__copy {
+    text-align: center;
+    background-color: $gris;
+    padding: 1rem 0;
+  }
+}

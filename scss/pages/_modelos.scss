@@ -1,0 +1,80 @@
+/* ?NUESTROS MODELOS */
+.main__titulo {
+  font-size: 5rem;
+  font-weight: 900;
+  border-bottom: 1px solid #1f1f1f;
+  padding-bottom: 2rem;
+}
+.modelo {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  margin-bottom: 5rem;
+
+  @include desktop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__contenido {
+    padding: 5rem;
+    background-color: $blanco;
+  }
+
+  &__contenido--premier {
+    @include desktop {
+      grid-row: 1 / 2;
+      grid-column: 2 / -1;
+      padding: 2rem;
+    }
+  }
+
+  &__contenido--basico,
+  &__contenido--elite {
+    @include desktop {
+      grid-row: 2 /3;
+      padding: 2rem;
+    }
+  }
+
+  &__titulo {
+    font-size: 4rem;
+    font-weight: 700;
+
+    @include desktop {
+      font-size: 5rem;
+      line-height: 0;
+    }
+  }
+  &__texto {
+    font-weight: 300;
+    line-height: 1.8;
+  }
+}
+
+.basico {
+  background-image: url(../img/modelo_basico.jpg);
+
+  @include desktop {
+    background-position: top right;
+  }
+}
+
+.basico,
+.elite {
+  @include desktop {
+    background-position: top right;
+  }
+}
+
+.premier {
+  background-image: url(../img/modelo_premier.jpg);
+
+  @include desktop {
+    background-position: top left;
+  }
+}
+
+.elite {
+  background-image: url(../img/modelo_elite.jpg);
+}
