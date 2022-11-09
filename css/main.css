@@ -678,17 +678,24 @@ template {
   row-gap: 2rem;
   margin-bottom: 3rem;
 }
+.form__titulo {
+  text-align: center;
+}
 .form__input--area {
   height: 20rem;
   resize: none;
 }
-.form__input--btn {
+.form__input--btn, .form__titulo {
   background-color: dodgerblue;
   border: none;
   padding: 1rem;
   cursor: pointer;
   color: #fff;
   border-radius: 3px;
+}
+.form__input--btn:hover {
+  background-color: #fff;
+  color: dodgerblue;
 }
 
 iframe {

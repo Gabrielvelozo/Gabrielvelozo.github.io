@@ -3,19 +3,26 @@
   flex-direction: column;
   row-gap: 2rem;
   margin-bottom: 3rem;
-
+  &__titulo {
+    text-align: center;
+  }
   &__input--area {
     height: 20rem;
     resize: none;
   }
 
-  &__input--btn {
+  &__input--btn,
+  &__titulo {
     background-color: dodgerblue;
     border: none;
     padding: 1rem;
     cursor: pointer;
-    color: #fff;
+    color: $blanco;
     border-radius: 3px;
+  }
+  &__input--btn:hover {
+    background-color: $blanco;
+    color: dodgerblue;
   }
 }
 
