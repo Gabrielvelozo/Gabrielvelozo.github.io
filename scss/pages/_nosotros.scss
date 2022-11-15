@@ -21,15 +21,6 @@
   }
 }
 
-.nosotro__titulo {
-  font-size: 5rem;
-  font-weight: 900;
-
-  @include tablet {
-    font-size: 6rem;
-    line-height: 0;
-  }
-}
 .nosotro__texto {
   line-height: 1.8;
   font-weight: 300;

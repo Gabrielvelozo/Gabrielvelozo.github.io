@@ -3,14 +3,6 @@
 .galeria {
   margin-bottom: 5rem;
 
-  &__titulo {
-    font-size: 5rem;
-
-    @include tablet {
-      font-size: 6rem;
-    }
-  }
-
   &__contenedor {
     grid-template-columns: 1fr;
     display: grid;

@@ -341,6 +341,14 @@ template {
   display: none;
 }
 
+.titulo {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 5rem;
+  margin: 5rem 0;
+  font-weight: 900;
+}
+
 /* BARRA NAVEGACIÓN */
 .barra {
   display: flex;
@@ -592,17 +600,6 @@ template {
   }
 }
 
-.nosotro__titulo {
-  font-size: 5rem;
-  font-weight: 900;
-}
-@media screen and (min-width: 768px) {
-  .nosotro__titulo {
-    font-size: 6rem;
-    line-height: 0;
-  }
-}
-
 .nosotro__texto {
   line-height: 1.8;
   font-weight: 300;
@@ -611,14 +608,6 @@ template {
 /* ?GALERIA */
 .galeria {
   margin-bottom: 5rem;
-}
-.galeria__titulo {
-  font-size: 5rem;
-}
-@media screen and (min-width: 768px) {
-  .galeria__titulo {
-    font-size: 6rem;
-  }
 }
 .galeria__contenedor {
   grid-template-columns: 1fr;
